@@ -22,7 +22,7 @@ layui.use(['upload','form','element','layer','flow'], function(){
 		//执行实例
 		var uploadInst = upload.render({
             elem: '#upimg' //绑定元素
-            ,url: './api.php' //上传接口
+            ,url: '/file/upload' //上传接口
             ,accept:'file'
             ,acceptMime:'image/jpeg,image/pjpeg,image/png,image/x-png,image/gif'
             ,exts: 'jpg|jpeg|png|gif'
