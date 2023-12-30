@@ -69,7 +69,56 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.12.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.7.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!--word导出相关依赖-->
+        <dependency>
+            <groupId>com.deepoove</groupId>
+            <artifactId>poi-tl</artifactId>
+            <version>1.10.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <!--html渲染插件-->
+        <dependency>
+            <groupId>io.github.draco1023</groupId>
+            <artifactId>poi-tl-ext</artifactId>
+            <version>0.3.3</version>
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>com.deepoove</groupId>-->
+<!--                    <artifactId>poi-tl</artifactId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.apache.poi</groupId>-->
+<!--                    <artifactId>ooxml-schemas</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+        </dependency>
+
     </dependencies>
+
+
+    <repositories>
+        <repository>
+            <id>icss-repository</id>
+            <name>icss repository</name>
+            <url>http://10.10.16.22:8081/repository/maven-public/</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>

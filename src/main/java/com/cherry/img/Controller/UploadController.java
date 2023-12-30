@@ -106,31 +106,7 @@ public class UploadController {
         return file;
     }
 
+    
 
-
-
-
-
-
-     @RequestMapping("/setRedis")
-     public String setRedis(){
-         String ces = redisUtils.set("aacs:111:asd", "测试分级");
-
-         return ces;
-     }
-
-     @RequestMapping("/getRedis")
-     public String getRedis(){
-         String ces = redisUtils.get("aacs:111:asd");
-
-         return ces;
-     }
-
-
-    public static void main(String[] args) {
-        for (int i = 0; i < 100; i++) {
-            System.out.println(new Random().nextInt(3)+1);
-        }
-    }
 
 }
